@@ -1,24 +1,96 @@
-# 📄 ATS Resume Score & Skill Gap Analyzer
+📄 ATS Resume Score & Skill Gap Analyzer
 
-A Machine Learning + NLP based web application that analyzes resumes against job descriptions and provides an ATS compatibility score with missing skill insights.
+🚀 Live App:
+👉 https://ats-resume-analyzer-327ap66qvkdz6vwy4xhqyn.streamlit.app/
 
-## 🚀 Features
-- Upload Resume (PDF)
-- Paste Job Description
-- ATS Match Score (%)
-- Missing Skills Detection
-- Cleaned Resume Preview
-- Built with Streamlit
+An end-to-end Machine Learning + NLP web application that evaluates how well a resume matches a given job description using ATS-style scoring logic.
+The system highlights missing skills, computes a match percentage, and helps candidates optimize their resumes for better shortlisting.
 
-## 🛠 Tech Stack
-- Python
-- Streamlit
-- NLP
-- Sentence Transformers (BERT)
-- Scikit-learn
-- PyTorch
+## 📸 Project Screenshots
 
-## ▶️ How to Run
-```bash
+### 🏠 Home Page
+![Home Page](screenshots/home_page.png)
+
+### 📊 ATS Score Result
+![ATS Score](screenshots/ats_score.png)
+
+🎯 Why This Project?
+
+Applicant Tracking Systems (ATS) are widely used by recruiters to filter resumes before human review.
+This project simulates that process using modern NLP techniques, helping job seekers understand where their resume stands and how to improve it.
+
+🚀 Features
+
+📄 Upload resume in PDF format
+
+📝 Paste any Job Description
+
+📊 ATS Match Score (%)
+
+⚠️ Missing Skills Identification
+
+🧹 Resume text preprocessing & cleaning
+
+🔍 Resume preview after NLP cleaning
+
+🌐 Fully deployed Streamlit Web App
+
+🛠 Tech Stack
+
+Python
+
+Streamlit (Web UI)
+
+Natural Language Processing (NLP)
+
+Sentence Transformers (BERT)
+
+Scikit-learn
+
+PyTorch
+
+pdfplumber
+
+🧠 How It Works (ML Pipeline)
+
+Resume PDF is parsed using pdfplumber
+
+Text preprocessing:
+
+Lowercasing
+
+Special character removal
+
+Resume & Job Description are converted into embeddings using Sentence Transformers (BERT)
+
+Cosine Similarity is calculated between resume and JD
+
+ATS score is generated as a percentage
+
+Skill gaps are identified by comparing expected skills vs resume content
+
+▶️ Run Locally
 pip install -r requirements.txt
 streamlit run app.py
+
+
+🔮 Future Enhancements
+
+Resume improvement suggestions powered by GenAI
+
+Skill weightage based on job priority
+
+Download ATS report as PDF
+
+Support for multiple resume comparisons
+
+👤 Author
+
+Satheesh Mulinti
+Final Year CSE Student | ML & NLP Enthusiast
+
+🔗 GitHub: https://github.com/satheeshMulinti
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub — it motivates me to build more impactful projects!
