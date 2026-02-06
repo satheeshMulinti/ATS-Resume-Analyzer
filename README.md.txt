@@ -6,16 +6,6 @@
 An end-to-end Machine Learning + NLP web application that evaluates how well a resume matches a given job description using ATS-style scoring logic.
 The system highlights missing skills, computes a match percentage, and helps candidates optimize their resumes for better shortlisting.
 
-<<<<<<< HEAD
-## 📸 Project Screenshots
-
-### 🏠 Home Page
-![Home Page](screenshots/home_page.png)
-
-### 📊 ATS Score Result
-![ATS Score](screenshots/ats_score.png)
-
-
 🎯 Why This Project?
 
 Applicant Tracking Systems (ATS) are widely used by recruiters to filter resumes before human review.
